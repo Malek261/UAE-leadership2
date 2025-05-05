@@ -1,0 +1,175 @@
+/* Portfolio Page Improvements for Modern, Clean, and Responsive Layout */
+
+body {
+    background: #f6f7fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-main {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px 40px 20px;
+}
+
+.portfolio-title {
+    font-size: 2.8rem;
+    font-weight: 8000;
+    margin-bottom: 36px;
+    margin-left: 350px;
+    color: #222;
+    letter-spacing: -1px;
+}
+
+.portfolio-experiences-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+.portfolio-experience-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 14px #0001;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    margin-bottom: 50px;
+}
+
+.portfolio-experience-card:hover {
+    box-shadow: 0 6px 24px #0074ff22;
+    transform: translateY(-4px) scale(1.025);
+}
+
+.portfolio-experience-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.portfolio-experience-content {
+    padding: 22px 20px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.portfolio-experience-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 22px;
+    min-height: 48px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.portfolio-experience-btn {
+    background: #22c55e;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 9px;
+    padding: 13px 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: auto;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.18s, box-shadow 0.18s;
+    box-shadow: 0 2px 10px #22c55e22;
+    display: block;
+}
+
+.portfolio-experience-btn:hover {
+    background: #16a34a;
+    box-shadow: 0 4px 18px #22c55e33;
+}
+
+.portfolio-like {
+    background: #ffeded;
+    color: #d12d2d;
+    font-size: 0.98rem;
+    border-radius: 11px;
+    padding: 3px 14px 3px 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 5px;
+}
+
+.like-icon {
+    font-size: 1.1rem;
+    margin-right: 2px;
+}
+
+.portfolio-looking {
+    background: #222;
+    color: #fff;
+    font-size: 0.94rem;
+    border-radius: 11px;
+    padding: 3px 11px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.portfolio-experience-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.portfolio-experience-oldprice {
+    color: #b0b0b0;
+    font-size: 0.98rem;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.portfolio-experience-price {
+    color: #222;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1020px) {
+    .portfolio-experiences-row {
+        justify-content: center;
+        gap: 22px;
+    }
+    .portfolio-experience-card {
+        width: 95vw;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio-title {
+        font-size: 2rem;
+    }
+    .portfolio-experiences-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .portfolio-experience-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    .portfolio-experience-img {
+        height: 150px;
+    }
+    .portfolio-experience-content {
+        padding: 17px 10px 13px 10px;
+    }
+}
